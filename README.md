@@ -1,23 +1,31 @@
 # spring-boot-rte-study
+Rich Text Editor study   
 
-Rich Text Editor study
+## editor-md-study
+[Editor.md](https://github.com/pandao/editor.md)  
+Editor.md - 开源在线 Markdown 编辑器   
+建立在众多优秀的开源组件基础之上，遵循和使用 MIT License 开源协议，无论个人还是公司，都可以免费自由使用。    
 
-todo :  
-1.markdown和html各保存了一份。不知道有没有更优雅的办法，譬如后台只存html,edit时，可以自动把html转换成markdown。   
-2.jpa生成的表结构，也domain对象中定义的顺序不一致，影响易用性（select看数据时）。目前有个折衷的办法来解决此问题，就是手工创建table。这样不爽，但不知道有没有优雅的办法来解决此问题。    
-3.根据手工创建的表，自动生成domain对象。目前idea在spring boot环境下不支持。不知道有没有比较好插件来解决这个问题。效率嘛能提高一点就提高一点嘛
+### Usage
+[http://localhost:8081](http://localhost:8081)
 
 
-Spring Security配合使用时，出现以下报错
->image-dialog.js:158 Uncaught DOMException: Blocked a frame with origin "http://localhost:8080" from accessing a cross-origin frame.
-     at HTMLIFrameElement.uploadIframe.onload (http://localhost:8080/editormd/plugins/image-dialog/image-dialog.js:158:129)
- uploadIframe.onload @ image-dialog.js:158
+## editor-ck-study
+[CKEditor](https://github.com/ckeditor)  
+CKEditor 4    The battle-tested editor, when you need even more features and legacy compatibility.    
 
-解决办法：
-```java
- http.headers().frameOptions().disable();	
-```
+### Usage
+[http://localhost:8082](http://localhost:8082)
 
-##欢迎issue,欢迎star,欢迎pr
 
-> 参考了 https://github.com/wchstrife/blog.git 
+## editor-u-study   
+[UEditor](http://ueditor.baidu.com/website/)  
+UEditor是由百度web前端研发部开发所见即所得富文本web编辑器，具有轻量，可定制，注重用户体验等特点，开源基于MIT协议，允许自由使用和修改代码...   
+### Usage
+[http://localhost:8083](http://localhost:8083)
+
+
+
+## 欢迎issue,欢迎star,欢迎pr
+
+
